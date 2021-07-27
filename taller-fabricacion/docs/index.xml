@@ -8,12 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://ricardomatte.github.io/taller-fabricacion/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Diseño por sobre Consumo</title>
-      <link>https://ricardomatte.github.io/taller-fabricacion/docs/1.post/</link>
+      <title>0. Diseño por sobre Consumo</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/0.-dise%C3%B1o-por-sobre-consumo/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/1.post/</guid>
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/0.-dise%C3%B1o-por-sobre-consumo/</guid>
       <description>Contenido sobre como afecta la sobrexplotacion de materia prima al planeta.</description>
+    </item>
+    
+    <item>
+      <title>1. Planimetria</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetrias/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetrias/</guid>
+      <description>Informacion sobre Charles Eames y plsnimetria de su silla Eames Lounge Chair Wood</description>
     </item>
     
     <item>
