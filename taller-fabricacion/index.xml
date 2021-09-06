@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://ricardomatte.github.io/taller-fabricacion/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>0. Diseño por sobre Consumo</title>
+      <title>00. Diseño por sobre Consumo</title>
       <link>https://ricardomatte.github.io/taller-fabricacion/docs/0.-dise%C3%B1o-por-sobre-consumo/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -17,12 +17,102 @@
     </item>
     
     <item>
-      <title>1. Planimetria</title>
-      <link>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetrias/</link>
+      <title>01. Planimetria</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetr%C3%ADas/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetrias/</guid>
-      <description>Informacion sobre Charles Eames y plsnimetria de su silla Eames Lounge Chair Wood</description>
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetr%C3%ADas/</guid>
+      <description>Información sobre Charles Eames y plsnimetria de su silla Eames Lounge Chair Wood</description>
+    </item>
+    
+    <item>
+      <title>02. Mecanizado CNC</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/2.-mecanizado-cnc/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/2.-mecanizado-cnc/</guid>
+      <description>Información sobre Mecanizado CNC</description>
+    </item>
+    
+    <item>
+      <title>03. Mecanizado 2.5 Ejes</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/3.-mecanizado-2.5-ejes/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/3.-mecanizado-2.5-ejes/</guid>
+      <description>Informacion sobre Mecanizado CNC 2.5 Ejes</description>
+    </item>
+    
+    <item>
+      <title>04. Simulación y Diseño Generativo</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/4.-simulaci%C3%B3n-y-dise%C3%B1o-generativo/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/4.-simulaci%C3%B3n-y-dise%C3%B1o-generativo/</guid>
+      <description>Informacion sobre Diseño Generativo</description>
+    </item>
+    
+    <item>
+      <title>05. Impresión 3D</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/5.-impresi%C3%B3n-3d/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/5.-impresi%C3%B3n-3d/</guid>
+      <description>Informacion sobre Impresióin 3D</description>
+    </item>
+    
+    <item>
+      <title>06. Diseño Superficies</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/6.-dise%C3%B1o-superficies/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/6.-dise%C3%B1o-superficies/</guid>
+      <description>Informacion sobre Diseño de Superficies</description>
+    </item>
+    
+    <item>
+      <title>07. Iframe Fusion 360</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/7-.-iframe-fusion-360/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/7-.-iframe-fusion-360/</guid>
+      <description>Informacion sobre como insertar iframe Fusion 360 en Hugo</description>
+    </item>
+    
+    <item>
+      <title>08. Experimentación Material</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/8.-experimentaci%C3%B3n-material/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/8.-experimentaci%C3%B3n-material/</guid>
+      <description>Informacion sobre Experimentación Material</description>
+    </item>
+    
+    <item>
+      <title>09. Experimentación Material 2</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/9.-experimentaci%C3%B3n-material-2/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/9.-experimentaci%C3%B3n-material-2/</guid>
+      <description>Informacion Experimentación Material 2</description>
+    </item>
+    
+    <item>
+      <title>10. Moldes</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/10.-moldes/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/10.-moldes/</guid>
+      <description>Información sobre Moldes</description>
+    </item>
+    
+    <item>
+      <title>11. Examen</title>
+      <link>https://ricardomatte.github.io/taller-fabricacion/docs/11.-examen/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://ricardomatte.github.io/taller-fabricacion/docs/11.-examen/</guid>
+      <description>Información sobre materiales a partir de caucho reciclado.</description>
     </item>
     
     <item>

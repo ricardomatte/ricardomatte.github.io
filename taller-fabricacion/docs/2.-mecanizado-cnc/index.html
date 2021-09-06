@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>02. Mecanizado CNC - Ricardo Matte I. - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://ricardomatte.github.io/taller-fabricacion/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/taller-fabricacion/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/taller-fabricacion/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/taller-fabricacion/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/"><img alt="Logo" src="/taller-fabricacion/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/"><img alt="Logo" src="/taller-fabricacion/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/taller-fabricacion/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/taller-fabricacion/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/0.-dise%C3%B1o-por-sobre-consumo/">00. Diseño por sobre Consumo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/1.-planimetr%C3%ADas/">01. Planimetria</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/2.-mecanizado-cnc/">02. Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/3.-mecanizado-2.5-ejes/">03. Mecanizado 2.5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/4.-simulaci%C3%B3n-y-dise%C3%B1o-generativo/">04. Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/5.-impresi%C3%B3n-3d/">05. Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/6.-dise%C3%B1o-superficies/">06. Diseño Superficies</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/7-.-iframe-fusion-360/">07. Iframe Fusion 360</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/8.-experimentaci%C3%B3n-material/">08. Experimentación Material</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/9.-experimentaci%C3%B3n-material-2/">09. Experimentación Material 2</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/10.-moldes/">10. Moldes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/11.-examen/">11. Examen</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://ricardomatte.github.io/taller-fabricacion/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">02. Mecanizado CNC</h1>
+<div class="content ">
+  <h2 id="mecanizado-cnc">Mecanizado CNC</h2>
+<p><img src="/taller-fabricacion/img/02/Fotos/01.png" alt="CNC"></p>
+<p>El Mecanizado CNC (Computer Numerical Control) se entiende como el proceso de corte y desgastes de materiales interpretando modelos en CAD 3D y creando instrucciones para su creación.</p>
+<p>Estos procesos tienen grandes ventajas para la industria, cuentan con una gran precisión y detalles, lograr crear piezas exactas según lo que se requiera, se puede producir dos piezas exactamente iguales al mismo tiempo y en cualquier parte del mundo.</p>
+<p>Las principales Maquinas CNC que actualmente se utilizan son:</p>
+<ul>
+<li>Tornos</li>
+<li>Fresadoras</li>
+<li>Enrutadores</li>
+<li>Cortadoras de Plasma</li>
+<li>Impresoras 3D</li>
+</ul>
+<p>Esta vez nos centraremos en la Fresadora y en el la Sección 5 hablaremos de las Impresoras 3D.</p>
+<h2 id="fresadoras">Fresadoras</h2>
+<p><img src="/taller-fabricacion/img/02/Fotos/03.png" alt="Fresadora"></p>
+<p>Estos son los principales modelos de fresadoras actualmente, existen diferentes aspectos que diferencian unas a otras.</p>
+<p>Por un lado está el Eje de Giro y por otro lado el Número de Ejes.</p>
+<h3 id="ejes-de-giro">Ejes de Giro</h3>
+<ul>
+<li>
+<p>Fresadoras Verticales: La fresa de la maquiina en este caso se encuentra en posición vertical, formando 90 grados con la mesa, esta máquina se utiliza principalmente para trabajos de ranurados, dentro de esta categoría tenemos dos sub categorías.</p>
+<ul>
+<li>Banco fijo: En este caso la mesa donde se asegura la pieza permanece fija y la fresa es la que realiza el movimiento con una trayectoria determinada.</li>
+<li>De Consola: Estas máquinas cuentan con la fresa fija y lo que se desplaza en sus ejes es la mesa de trabajo o la pieza.</li>
+</ul>
+</li>
+<li>
+<p>Fresadoras Horizontales: Estas máquinas son prácticamente lo mismo que las anteriores dolo que en vez de ser verticales su fresa se encuentra horizontal respecto a la mesa de trabajo, su principal función es el ranurado de piezas.</p>
+</li>
+<li>
+<p>Fresadoras Universales: Corresponden a las fresadoras con la capacidad de manejarse tanto vertical como horizontalmente, es una combinación de los modelos mencionados anteriormente.</p>
+</li>
+</ul>
+<h3 id="número-de-ejes">Número de Ejes</h3>
+<p>Dependiendo del número de ejes son las capacidades que tiene la máquina para realizar piezas, actualmente las principales fresadoras van desde los 3 ejes hasta los 6. Mientras más ejes son mayores las posibilidades de piezas que se pueden crear.</p>
+<p>Nosotros nos centraremos en las fresadoras de 3 Ejes.</p>
+<h3 id="parametros">Parametros</h3>
+<p>Dependiendo los materiales existen diferentes configuraciones para las máquinas, a continuación se muestra una tabla con los diferentes parámetros recomendados.</p>
+<p><img src="/taller-fabricacion/img/02/Fotos/04.png" alt="Parametros"></p>
+<h2 id="ejemplo">Ejemplo</h2>
+<p>Para entender de mejor manera el mecanizado CNC y la utilización de los software de mecanizado realizaremos el proceso de fresado de una silla.</p>
+<h3 id="silla-fresia">Silla Fresia</h3>
+<div>
+    <iframe 
+    src='https://alumnos4818.autodesk360.com/shares/public/SH9285eQTcf875d3c53946c35c42adc14306?mode=embed'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p>Para crear esta silla se requieren diferentes comandos de Mecanizado CNC dependiendo las formas de las piezas, para este modelo serian tres categorías:</p>
+<ul>
+<li>
+<p>Primero el mecanizado de piezas planas las cuales se crean desde un cuerpo solido y la fresa solo debe cortar las piezas y realizar  los sacados para permitir los encajes.</p>
+</li>
+<li>
+<p>El segundo tipo de piezas corresponde a las que se requiere que se doblen, para esto se crea un desgaste en la pieza, a través de un trazado.</p>
+</li>
+<li>
+<p>El Tercero corresponde a las piezas que tienen un desgaste en su proceso, correspondiendo a un Mecanizado de 2.5 Ejes.</p>
+</li>
+</ul>
+<p>En este primera sección nos centraremos en los dos primeros tipos de Mecanizados el de figuras planas y el de trazado, el Mecanizado de 2.5 Ejes sera explicado en la siguiente sección.</p>
+<h3 id="tutorial">Tutorial</h3>
+<ul>
+<li>En estos tutoriales estaremos trabajando con archivos de Autodesk Fusion 360, en español y para sistema operativo macOS.</li>
+<li>Para comenzar descargar estos archivos:</li>
+</ul>
+<a class="face-button" href="/descargas//asiento.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+
+<a class="face-button" href="/descargas//silla_fresia.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+
+<h3 id="mecanizado-piezas-planas">Mecanizado Piezas Planas</h3>
+<ul>
+<li>Ahora debemos abrir el archivo <code>silla_fresia.f3d</code> desde Fusion 360.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/01.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Luego ocultaremos todas las capas para despejar el área de trabajo e ir activandolas a medida que las usamos.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/02.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Creamos una plataforma de (1220mm x 1220mm x 15mm) o el tamaño de la plancha de madera que vamos a utilizar.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/03.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Copiamos las primeras piezas que vamos a mecanizar.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/04.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Alineamos las piezas con el plano inferior, es importante que estén perfectamente alineadas con este plano y los sacados de la pieza deben quedar en su cara superior, aplicar <code>Flip</code> a la pieza en caso de ser necesario.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/05.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Ordenamos de manera eficiente las piezas en nuestra plancha de madera, buscando optimizar el uso de esta.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/06.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Cambiamos al modo <code>Fabricación</code> del programa.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/07.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Seleccionamos la máquina que usaremos, en este caso es <code>Autodesk Generic 3-axis</code>.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/08.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Seleccionamos el volumen del cual crearemos nuestras piezas.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/09.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Seleccionamos las piezas que queremos mecanizar.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/10.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Marcamos nuestros Ejez Z e Y.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/11.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Seleccionamos el punto de origen para la máquina.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/12.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Configuramos el <code>Contorno 2D</code>, en este caso utilizaremos la fresa <code>6mm Flat Endmill</code>, lo más importante de la selección de la fresa es no superar la regla del 50%, esta proporción corresponde a la profundidad máxima de calado de cada fresa, para una fresa de 6mm el máximo de calado serian 3mm.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/13.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Acá se puede ver la simulación de la primera trayectoria.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/14.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Configuramos el <code>Vaciado 2D</code> utilizando la misma fresa del paso anterior y la misma restricción de la profundidad de calado.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/15.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Configuramos el segundo <code>Contorno 2D</code>, respetando las mismas restricciones mencionadas anteriormente. Ahora al corresponder al corte de la pieza se debe tener cuidado con que la pieza quede suelta mientras se termina de cortar creando imperfecciones, para esto se configuran las <code>Fichas</code>, estas corresponden a pedazos sin cortar que hacen de soporte a la pieza, en este caso utilizaremos 3mm de altura y cada 350mm de distancia, se deben estimar según el tamaño de la pieza.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/16.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Simulamos todos las configuraciones para revisar que este todo correcto.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/17.mov"  type="video/mp4">
+    </video>
+</div></li>
+</ul>
+<h2 id="trazado">Trazado</h2>
+<p><img src="/taller-fabricacion/img/02/Fotos/cnc/01.jpeg" alt="Silla Fresia">
+Este trazado se realiza buscando darle flexibilidad a piezas rígidas, en este caso buscamos darle la curvatura a la pieza del asiento de la silla.</p>
+<ul>
+<li>Abrimos el archivo <code>asiento.f3d</code> el cual descargamos anteriormente.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/18.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Creamos una plancha de (1220mm x 1220mm x 9mm), simulando el material que utilizaremos.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/19.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Por comodidad disminuimos la opacidad de la pieza que creamos.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/20.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Configuramos la máquina de la misma forma que lo hicimos anteriormente.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/21.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Utilizamos el comando <code>Contorno 2D</code> y seleccionamos el perfil de la pieza.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/22.mov"  type="video/mp4">
+    </video>
+</div></li>
+<li>Utilizamos el comando <code>Trazo</code> y luego simulamos las configuraciones para revisar que este todo bien.
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/taller-fabricacion/img//02/videos/23.mov"  type="video/mp4">
+    </video>
+</div></li>
+</ul>
+<h2 id="planimetrías">Planimetrías</h2>
+<p><img src="/taller-fabricacion/img/02/fresia/01.png" alt="Silla Fresia"></p>
+<p><img src="/taller-fabricacion/img/02/fresia/02.png" alt="Silla Fresia"></p>
+<p><img src="/taller-fabricacion/img/02/fresia/03.png" alt="Silla Fresia"></p>
+<p><img src="/taller-fabricacion/img/02/fresia/04.png" alt="Silla Fresia"></p>
+<p><img src="/taller-fabricacion/img/02/fresia/05.png" alt="Silla Fresia"></p>
+<p><img src="/taller-fabricacion/img/02/fresia/06.png" alt="Silla Fresia"></p>
+<p>
+<link rel="stylesheet" href="/taller-fabricacion/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//01.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//01.png" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//01.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//02.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//02.png" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//02.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//03.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//03.png" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//03.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//04.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//04.png" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//04.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//05.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//05.png" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//05.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//06.png');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//06.png" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/fondo//06.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<h2 id="proceso">Proceso</h2>
+<p>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//01.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//01.jpeg" alt="1st" />
+				    </div>
+			      <figcaption>
+		          <p>1st</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//01.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//02.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//02.jpeg" alt="2nd" />
+				    </div>
+			      <figcaption>
+		          <p>2nd</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//02.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//03.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//03.jpeg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//03.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//04.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//04.jpeg" alt="4th" />
+				    </div>
+			      <figcaption>
+		          <p>4th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//04.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//05.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//05.jpeg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//05.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//06.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//06.jpeg" alt="6th" />
+				    </div>
+			      <figcaption>
+		          <p>6th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//06.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//07.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//07.jpeg" alt="7th" />
+				    </div>
+			      <figcaption>
+		          <p>7th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//07.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//08.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//08.jpeg" alt="8th" />
+				    </div>
+			      <figcaption>
+		          <p>8th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//08.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//09.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//09.jpeg" alt="9th" />
+				    </div>
+			      <figcaption>
+		          <p>9th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//09.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//10.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//10.jpeg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//10.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//11.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//11.jpeg" alt="11th" />
+				    </div>
+			      <figcaption>
+		          <p>11th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//11.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//12.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//12.jpeg" alt="12th" />
+				    </div>
+			      <figcaption>
+		          <p>12th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//12.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//13.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//13.jpeg" alt="13th" />
+				    </div>
+			      <figcaption>
+		          <p>13th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//13.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//14.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//14.jpeg" alt="14th" />
+				    </div>
+			      <figcaption>
+		          <p>14th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//14.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//15.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//15.jpeg" alt="15th" />
+				    </div>
+			      <figcaption>
+		          <p>15th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//15.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//16.jpeg');" >
+				      <img itemprop="thumbnail" src="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//16.jpeg" alt="16th" />
+				    </div>
+			      <figcaption>
+		          <p>16th</p>
+			      </figcaption>
+				    <a href="https://ricardomatte.github.io/taller-fabricacion//img/02/Fotos/cnc//16.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/taller-fabricacion/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
